@@ -516,16 +516,72 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-8 {
-  margin-left: 2rem;
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.top-52 {
+  top: 13rem;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[90\%\] {
+  top: 90%;
+}
+
+.top-\[70\%\] {
+  top: 70%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.top-\[95\%\] {
+  top: 95%;
 }
 
 .ml-12 {
   margin-left: 3rem;
 }
 
-.block {
-  display: block;
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -540,28 +596,69 @@ video {
   height: 100vh;
 }
 
-.w-24 {
-  width: 6rem;
+.h-10 {
+  height: 2.5rem;
 }
 
-.w-20 {
-  width: 5rem;
+.h-6 {
+  height: 1.5rem;
 }
 
-.w-28 {
-  width: 7rem;
+.h-8 {
+  height: 2rem;
 }
 
 .w-32 {
   width: 8rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.translate-x-\[-50\%\] {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -574,16 +671,87 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/dfa1ee09-8585-422e-a32a-067e14159aa0\/bvlatuR\/std\/2880x2400\/Homepage-Model-Y-Global-Desktop\?quality\=auto-medium\&amp\;format\=auto\'\)\] {
-  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dfa1ee09-8585-422e-a32a-067e14159aa0/bvlatuR/std/2880x2400/Homepage-Model-Y-Global-Desktop?quality=auto-medium&amp;format=auto');
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1674574124349-0928f4b2bce3\?ixlib\=rb-4\.0\.3\&ixid\=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=1171\&q\=80\'\)\] {
-  background-image: url('https://images.unsplash.com/photo-1674574124349-0928f4b2bce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-blue-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1560958089-b8a1929cea89\?ixlib\=rb-4\.0\.3\&ixid\=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8\&auto\=format\&fit\=crop\&w\=1171\&q\=80\'\)\] {
   background-image: url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/dfa1ee09-8585-422e-a32a-067e14159aa0\/bvlatuR\/std\/2880x2400\/Homepage-Model-Y-Global-Desktop\?quality\=auto-medium\&amp\;format\=auto\%22\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dfa1ee09-8585-422e-a32a-067e14159aa0/bvlatuR/std/2880x2400/Homepage-Model-Y-Global-Desktop?quality=auto-medium&amp;format=auto%22');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/dfa1ee09-8585-422e-a32a-067e14159aa0\/bvlatuR\/std\/2880x2400\/Homepage-Model-Y-Global-Desktop\?quality\=auto-mediumformat\=auto\%22\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dfa1ee09-8585-422e-a32a-067e14159aa0/bvlatuR/std/2880x2400/Homepage-Model-Y-Global-Desktop?quality=auto-mediumformat=auto%22');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/a269d7b4-87a9-4057-9ac5-2565e56a188e\/bvlatuR\/std\/4096x2560\/Homepage-Model-3-Desktop-LHD\?quality\=auto-mediumformat\=auto\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-mediumformat=auto');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/898c2038-c428-452c-84bf-034d5c48ca8e\/bvlatuR\/std\/4096x2560\/Model-S-homepage-desktop\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/898c2038-c428-452c-84bf-034d5c48ca8e/bvlatuR/std/4096x2560/Model-S-homepage-desktop');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/05a76324-947e-453b-a628-8b2d759756fa\/bvlatuR\/std\/2880x1800\/Homepage-Model-X-Desktop-LHD\?quality\=auto-medium\&amp\;format\=auto\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/05a76324-947e-453b-a628-8b2d759756fa/bvlatuR/std/2880x1800/Homepage-Model-X-Desktop-LHD?quality=auto-medium&amp;format=auto');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/05a76324-947e-453b-a628-8b2d759756fa\/bvlatuR\/std\/2880x1800\/Homepage-Model-X-Desktop-LHD\?quality\=auto-mediumformat\=auto\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/05a76324-947e-453b-a628-8b2d759756fa/bvlatuR/std/2880x1800/Homepage-Model-X-Desktop-LHD?quality=auto-mediumformat=auto');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/16b04537-a4be-4bf9-8637-86862a858da8\/bvlatuR\/std\/2880x1800\/_25-HP-SolarPanels-D\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/4a41ec0e-7316-46a8-8ce9-e2f195ba644d\/bvlatuR\/std\/2880x1800\/Homepage-SolarRoof-Desktop-Global\?quality\=auto-medium\&format\=auto\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/4a41ec0e-7316-46a8-8ce9-e2f195ba644d/bvlatuR/std/2880x1800/Homepage-SolarRoof-Desktop-Global?quality=auto-medium&format=auto');
+}
+
+.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/dd739764-bcaa-4263-9488-8c73bc9fb046\/bvlatuR\/std\/0x0\/dd739764-bcaa-4263-9488-8c73bc9fb046\'\)\] {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/0x0/dd739764-bcaa-4263-9488-8c73bc9fb046');
 }
 
 .bg-cover {
@@ -599,24 +767,35 @@ video {
   padding-right: 0.75rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.pl-3 {
-  padding-left: 0.75rem;
+.text-center {
+  text-align: center;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-sm {
@@ -624,27 +803,90 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.text-\[\] {
+  color: ;
 }
 
-.showcase {
-  background-image: url("./img/Homepage-Model-Y-Global-Desktop.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.text-\[\#5c\] {
+  color: #5c;
 }
 
-.hover\:rounded-xl:hover {
-  border-radius: 0.75rem;
+.text-\[\#5c5\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 204 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#5c5d61\] {
+  --tw-text-opacity: 1;
+  color: rgb(92 93 97 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-0 {
+  text-decoration-thickness: 0px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+@font-face {
+  font-family: Gotham book;
+
+  src: url("../public/FontsFree-Net-GothamBook.ttf");
+}
+
+* {
+  font-family: Gotham book;
 }
 
 .hover\:bg-slate-300:hover {
@@ -652,14 +894,43 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+.hover\:decoration-2:hover {
+  text-decoration-thickness: 2px;
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
+.hover\:decoration-4:hover {
+  text-decoration-thickness: 4px;
+}
+
+@media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:w-72 {
+    width: 18rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 

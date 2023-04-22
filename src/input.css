@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.showcase {
-  background-image: url("./img/Homepage-Model-Y-Global-Desktop.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@font-face {
+  font-family: Gotham book;
+  src: url("../public/FontsFree-Net-GothamBook.ttf");
+}
+
+* {
+  font-family: Gotham book;
 }
